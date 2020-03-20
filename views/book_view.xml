@@ -18,6 +18,9 @@
             <field name="date_published" />
             <field name="isbn" />
             <field name="active" />
+            <field name="reward_ids" 
+            readonly="1"
+          />
             <field name="image" widget="image" />
           </group>
     </sheet>
