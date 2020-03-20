@@ -7,11 +7,20 @@
       name="Library Books"
       res_model="library.book"
       view_mode="tree,form"
-	/>
+	  />
 
+    <act_window id="action_library_reward"
+      name="Rewards"
+      res_model="library.reward"
+      view_mode="tree,form"
+    />
     <menuitem id="menu_library_book"
               name="Book"
-	      action="action_library_book"
+	            action="action_library_book"
               parent="library_menu" />
-
+    
+    <menuitem id="menu_library_reward"
+              name="Reward"
+              action="action_library_reward"
+              parent="library_menu" />
 </odoo>

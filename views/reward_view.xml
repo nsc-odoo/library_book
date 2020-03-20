@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="view_form_reward" model="ir.ui.view">
+        <field name="name">Reward Form</field>
+        <field name="model">library.reward</field>
+        <field name="arch" type="xml">
+            <form string="Reward">
+                <sheet>
+                    <group>
+                        <field name="title" />
+                        <field name="book_id"/>
+                        <field name="amount" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+        </record>
+
+        <record id="view_tree_reward" model="ir.ui.view">
+        <field name="name">Reward List</field>
+        <field name="model">library.reward</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="title" />
+                <field name="book_id"/>
+                <field name="amount" />
+            </tree>
+        </field>
+        </record>
+
+        <record id="view_search_reward" model="ir.ui.view">
+        <field name="name">Reward Filters</field>
+        <field name="model">library.reward</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="title"/>
+            </search>
+        </field>
+    </record>
+
+</odoo>

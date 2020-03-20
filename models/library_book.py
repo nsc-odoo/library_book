@@ -13,6 +13,12 @@ class Book(models.Model):
     image = fields.Binary('Cover')
     publisher_id = fields.Many2one('res.partner', string='Publisher')
     author_ids = fields.Many2many('res.partner', string='Authors')
+    reward_ids = fields.One2many(
+        'library.reward', 
+        'book_id',
+        string="Récompenses"
+    )
+    
 
     @api.onchange(isbn)
     def _check_isbn(self):
